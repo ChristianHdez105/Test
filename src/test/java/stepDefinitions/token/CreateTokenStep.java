@@ -3,15 +3,14 @@ package stepDefinitions.token;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import models.GenerationTokenModel;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 import questions.IsTheResponseCode;
-import tasks.GenerationTokenTasks;
+import tasks.CreateTokenTasks;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.CoreMatchers.equalTo;
 
-public class GenerationTokenStep {
+public class CreateTokenStep {
 
     // Environment variables
     private static final String URLSANDBOX = "https://sandbox.99minutos.com";
@@ -34,7 +33,7 @@ public class GenerationTokenStep {
                 "}";
 
         user.attemptsTo(
-                GenerationTokenTasks.withInfo(generationToken)
+                CreateTokenTasks.withInfo(generationToken)
         );
 
     }

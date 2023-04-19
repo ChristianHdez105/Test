@@ -6,7 +6,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/token/generationToken.feature",
+        features = "src/test/resources/features/token/token.feature",
         plugin = {
                 "pretty"
         },

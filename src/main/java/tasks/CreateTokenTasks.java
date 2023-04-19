@@ -7,15 +7,15 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.rest.interactions.Post;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class GenerationTokenTasks implements Task {
+public class CreateTokenTasks implements Task {
     private final String tokenInformation;
 
-    public GenerationTokenTasks(String tokenInformation) {
+    public CreateTokenTasks(String tokenInformation) {
         this.tokenInformation = tokenInformation;
     }
 
     public static Performable withInfo(String tokenInformation) {
-        return instrumented(GenerationTokenTasks.class, tokenInformation);
+        return instrumented(CreateTokenTasks.class, tokenInformation);
     }
 
     @Override

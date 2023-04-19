@@ -3,7 +3,7 @@ package models;
 import lombok.Data;
 
 @Data
-public class GenerationTokenModel {
+public class CreateTokenModel {
     private String clientID;
     private String clientSecret;
 }
